@@ -1,0 +1,109 @@
+{
+  "fixtures": [
+    {
+      "id": "bbox_standard_5000",
+      "description": "Bounding box, 5,000 images, standard turnaround (landing page default)",
+      "input": {
+        "annotation_type": "bbox",
+        "images": 5000,
+        "turnaround": "standard"
+      },
+      "expected": {
+        "currency": "INR",
+        "labels_est": 30000,
+        "rate_paise": 500,
+        "base_paise": 15000000,
+        "discount_pct": 6,
+        "discount_paise": 900000,
+        "surcharge_pct": 0,
+        "surcharge_paise": 0,
+        "total_paise": 14100000,
+        "total_inr_formatted": "₹1,41,000"
+      }
+    },
+    {
+      "id": "classification_standard_20000",
+      "description": "Classification, 20,000 images, standard turnaround",
+      "input": {
+        "annotation_type": "classification",
+        "images": 20000,
+        "turnaround": "standard"
+      },
+      "expected": {
+        "currency": "INR",
+        "labels_est": 20000,
+        "rate_paise": 150,
+        "base_paise": 3000000,
+        "discount_pct": 0,
+        "discount_paise": 0,
+        "surcharge_pct": 0,
+        "surcharge_paise": 0,
+        "total_paise": 3000000,
+        "total_inr_formatted": "₹30,000"
+      }
+    },
+    {
+      "id": "polygon_priority_10000",
+      "description": "Polygon, 10,000 images, priority turnaround",
+      "input": {
+        "annotation_type": "polygon",
+        "images": 10000,
+        "turnaround": "priority"
+      },
+      "expected": {
+        "currency": "INR",
+        "labels_est": 60000,
+        "rate_paise": 1200,
+        "base_paise": 72000000,
+        "discount_pct": 10,
+        "discount_paise": 7200000,
+        "surcharge_pct": 20,
+        "surcharge_paise": 14400000,
+        "total_paise": 79200000,
+        "total_inr_formatted": "₹7,92,000"
+      }
+    },
+    {
+      "id": "keypoint_rush_5000",
+      "description": "Keypoint, 5,000 images, rush turnaround",
+      "input": {
+        "annotation_type": "keypoint",
+        "images": 5000,
+        "turnaround": "rush"
+      },
+      "expected": {
+        "currency": "INR",
+        "labels_est": 30000,
+        "rate_paise": 800,
+        "base_paise": 24000000,
+        "discount_pct": 6,
+        "discount_paise": 1440000,
+        "surcharge_pct": 45,
+        "surcharge_paise": 10800000,
+        "total_paise": 33360000,
+        "total_inr_formatted": "₹3,33,600"
+      }
+    },
+    {
+      "id": "segmentation_rush_50000",
+      "description": "Segmentation, 50,000 images, rush turnaround",
+      "input": {
+        "annotation_type": "segmentation",
+        "images": 50000,
+        "turnaround": "rush"
+      },
+      "expected": {
+        "currency": "INR",
+        "labels_est": 300000,
+        "rate_paise": 1800,
+        "base_paise": 540000000,
+        "discount_pct": 20,
+        "discount_paise": 108000000,
+        "surcharge_pct": 45,
+        "surcharge_paise": 243000000,
+        "total_paise": 675000000,
+        "total_inr_formatted": "₹67,50,000"
+      }
+    }
+  ]
+}
